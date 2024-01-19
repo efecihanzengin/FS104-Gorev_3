@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Resim Galerisi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <style>
+    </style>
+</head>
+
+<body>
+
+    <div class="container-8 bg-emphasis text-center ">
+        <br />
+        <h1>Resim Galerisi</h1>
+
+        <div class="container text-center modal-body p-3 mb-2">
+            <div class="row row-cols-4">
+                <!-- Resim 1 -->
+                <div class="col">
+                    <a href="#" onclick="showModal('https://picsum.photos/id/133/500/500');">
+                        <img src="https://picsum.photos/id/133/500/500" alt="Resim_1" class="img-thumbnail">
+                    </a>
+                </div>
+                <!-- Resim 2 -->
+                <div class="col">
+                    <a href="#" onclick="showModal('https://picsum.photos/id/134/500/500');">
+                        <img src="https://picsum.photos/id/134/500/500" alt="Resim_2" class="img-thumbnail">
+                    </a>
+                </div>
+                <!-- Resim 3 -->
+                <div class="col">
+                    <a href="#" onclick="showModal('https://picsum.photos/id/135/500/500');">
+                        <img src="https://picsum.photos/id/135/500/500" alt="Resim_3" class="img-thumbnail">
+                    </a>
+                </div>
+                <!-- Resim 4 -->
+                <div class="col">
+                    <a href="#" onclick="showModal('https://picsum.photos/id/136/500/500');">
+                        <img src="https://picsum.photos/id/136/500/500" alt="Resim_4" class="img-thumbnail">
+                    </a>
+                </div>
+
+            </div>
+            <br />
+            <div class="row row-cols-4">
+                <!-- Resim 5 -->
+                <div class="col">
+                    <a href="#" onclick="showModal('https://picsum.photos/id/137/500/500');">
+                        <img src="https://picsum.photos/id/137/500/500" alt="Resim_5" class="img-thumbnail">
+                    </a>
+                </div>
+                <!-- Resim 6 -->
+                <div class="col">
+                    <a href="#" onclick="showModal('https://picsum.photos/id/666/500/500');">
+                        <img src="https://picsum.photos/id/666/500/500" alt="Resim_6" class="img-thumbnail">
+                    </a>
+                </div>
+                <!-- Resim 7 -->
+                <div class="col">
+                    <a href="#" onclick="showModal('https://picsum.photos/id/139/500/500');">
+                        <img src="https://picsum.photos/id/139/500/500" alt="Resim_7" class="img-thumbnail">
+                    </a>
+                </div>
+                <!-- Resim 8 -->
+                <div class="col">
+                    <a href="#" onclick="showModal('https://picsum.photos/id/140/500/500');">
+                        <img src="https://picsum.photos/id/140/500/500" alt="Resim_8" class="img-thumbnail">
+                    </a>
+                </div>
+            </div>
+            <br />
+            <div class="row row-cols-4">
+                <!-- Resim 9 -->
+                <div class="col">
+                    <a href="#" onclick="showModal('https://picsum.photos/id/141/500/500');">
+                        <img src="https://picsum.photos/id/141/500/500" alt="Resim_9" class="img-thumbnail">
+                    </a>
+                </div>
+                <!-- Resim 10 -->
+                <div class="col">
+                    <a href="#" onclick="showModal('https://picsum.photos/id/142/500/500');">
+                        <img src="https://picsum.photos/id/143/500/500" alt="Resim_10" class="img-thumbnail">
+                    </a>
+                </div>
+                <!-- Resim 11 -->
+                <div class="col">
+                    <a href="#" onclick="showModal('https://picsum.photos/id/144/500/500');">
+                        <img src="https://picsum.photos/id/144/500/500" alt="resim_11" class="img-thumbnail">
+                    </a>
+
+
+                </div>
+                <!-- Resim 12 -->
+                <div class="col">
+                    <a href="#" onclick="showModal('https://picsum.photos/id/145/500/500');">
+                        <img src="https://picsum.photos/id/145/500/500" alt="Resim_12" class="img-thumbnail">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Modal Þablon-->
+        <div class="modal fade" id="modal1">
+            <div class="modal-dialog">
+                <div class="modal-content text-center">
+                    <div class="modal-body">
+                        <img src="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+
+    <script>
+
+        function showModal(url) {
+            const myModal = new bootstrap.Modal('#modal1');
+            const img = document.querySelector('#modal1 img');
+            img.src = url;
+            myModal.show();
+        }
+
+
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>
